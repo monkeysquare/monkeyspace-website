@@ -1,13 +1,11 @@
-<!DOCTYPE HTML>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Mulder Generated Site - {{ item.title }}</title>
-		<link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-	</head>
-	<body>
-		<div id="main">
-			{{ content }}
-		</div>
-	</body>
-</html>
+{% include header.html %}
+    <section id="masthead">
+        <div class="wrapper">
+            {% include nav.html %}
+            <div id="intro">
+                <h2>{{ item.title }}</h2>
+            </div>
+        </div>
+    </section>
+    {{ content }}
+{% include footer.html %}
