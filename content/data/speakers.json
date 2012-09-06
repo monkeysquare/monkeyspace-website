@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Chris Hardy",
+        "twitter_handle": "chrisntr",
+        "bio": "Chris Hardy, a Microsoft ASPInsider, is an .NET consultant focusing on MonoTouch and Mono for Android development.\n\nEver since MonoTouch was in beta, Chris has been developing and evangelising MonoTouch and Mono for Android and was one of the first users to get a MonoTouch application on to the App Store. Speaking at conferences around the world on the subject, Chris has been a key part of the community and extended this by contributing to MonoTouch and Mono for Android books.",
+        "headshotUrl": "/images/speakers/chris.jpg"
+    },
+    {
+        "name": "Demis Bellot",
+        "twitter_handle": "demisbellot",
+        "bio": "Demis Bellot is a developer at Stack Exchange where he maintains StackOverflow Careers 2.0 Back Office Web & MQ services built on ServiceStack - an Open Source, high-performance, cross-platform Web Services framework. ServiceStack includes a number of lean components for developing high-performance web services, including: .NET's fastest JSON and text serializers, leading C# RedisClient, One of .NET's fastest POCO-based Micro ORMS, Caching, Session, Logging & authentication providers as well a node.js powered css, less, sass, coffeescript & js minifier & bundler.",
+        "headshotUrl": "/images/speakers/demis.jpg"
+    },
+    {
+        "name": "Frank Krueger",
+        "twitter_handle": "praeclarum",
+        "bio": "Frank has been programming professionally for 14 years with most of that time spent on the Windows platform but now spends his time on the Mono Platform. He has rejected his Electrical Engineering education and focuses today on mobile app and web app development using a variety of platforms. Past projects include embedded engine management system development, scientific simulators, tooling for graphics and game developers, online retail, and control software for naval ships. He runs a small consulting business in Seattle, WA that enables him to work on a variety of projects in a variety of industries. Today he is most excited about the mobile platform and opportunities for advancing the state of the art of the human-machine interface.",
+        "headshotUrl": "/images/speakers/frank.jpg"
+    },
+    {
+        "name": "Greg Shackles",
+        "twitter_handle": "gshackles",
+        "bio": "Greg Shackles is a Senior Software Engineer at OLO Online Ordering, based in New York City. His book, Mobile Development with C#, published by O'Reilly, covers how to get started building iOS, Android and Windows Phone apps with C#. As an active member of the community, Greg speaks regularly at many user groups and developer events, and is also a co-author of a monthly Mono for Android column for Visual Studio Magazine.\n\nOutside of technology, Greg is obsessed with heavy metal, baseball, and craft beer, sometimes in combination, as well as an aspiring homebrewer.",
+        "headshotUrl": "/images/speakers/greg.jpg"
+    },
+    {
+        "name": "James Avery",
+        "twitter_handle": "averyj",
+        "bio": "James is the founder and CEO of Adzerk, a next generation ad platform that brings simplicity and power to publishers and networks. James serves as an advisor to Max Foundry, DotNetKicks, and Epic Win Hosting. He previously co-founded Tekpub (a popular destination for developer screencasts) and Zerk Media (parent company of The Lounge and Ruby Row ad networks). James has been writing code and starting companies for the last 10 years, and has also written books for O’Reilly, Wrox, and Microsoft Press.",
+        "headshotUrl": "/images/speakers/james.jpg"
+    },
+    {
+        "name": "Jb Evain",
+        "twitter_handle": "jbevain",
+        "bio": "Jb is the founder of SyntaxTree, a developer tools company. He's the author of Mono.Cecil, a widely used library in the .net ecosystem, and a long time Mono contributor. He has a soft spot for programming languages, compilers, decompilers and tools alike.",
+        "headshotUrl": "/images/speakers/jb.jpg"
+    },
+    {
+        "name": "Jeroen Frijters",
+        "twitter_handle": "jeroenfrijters",
+        "bio": "Jeroen is the co-founder of Sumatra Software b.v. and the founder of the IKVM.NET project. He likes to develop in C#, write cranky blog posts, find security vulnerabilities and spelunk the internals of the JVM and CLR.",
+        "headshotUrl": "/images/speakers/jeroen.jpg"
+    },
+    {
+        "name": "Phil Haack",
+        "twitter_handle": "haacked",
+        "bio": "Phil Haack (yes, it's pronounced \"hack\") works at GitHub finding ways to make it better for .NET and Windows developers everywhere. Prior to GitHub, he was a senior Program Manager at Microsoft responsible for shipping ASP.NET MVC, NuGet, among other projects.",
+        "headshotUrl": "/images/speakers/phil.jpg"
+    },
+    {
+        "name": "Dean Ellis",
+        "twitter_handle": "infspacestudios",
+        "bio": "Dean Ellis has been a software engineer for the last 15 years. He currently works for Aurora Computer Services Ltd developing and maintaining Face Recongnition Kiosks using C# .Net and Mono as well as developing desktop, web and mobile based softare solutions.\n\nIn his spare time he is one of the project coordinators and a contributor to MonoGame an open source, multi platform implementation of XNA.",
+        "headshotUrl": "/images/speakers/dean.jpg"
+    }
+]

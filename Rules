@@ -11,6 +11,10 @@
 //   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 //   because “*” matches zero or more characters.
 
+Compile("/data/*/", (context) => {
+  // don’t filter or layout
+});
+
 Compile("/css/*/", (context) => {
   // don’t filter or layout
 });
@@ -29,6 +33,10 @@ Compile("*", (context) => {
   } else {
     context.WithLayout("default");
   }
+});
+
+Route("/data/*/", (context) => {
+  return context.Item.Identifier.Chop() + context.Item.Meta["extension"];
 });
 
 Route("/js/*/", (context) => {
