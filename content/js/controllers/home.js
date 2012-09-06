@@ -44,9 +44,9 @@ monkeyspace.home = {
             modalHtml += "<img src=\"" + speaker.headshotUrl + "\" width=\"120\" height=\"120\" />";
             modalHtml += "<div class=\"content\">";
             modalHtml += "<h5>" + speaker.name + "</h5>";
-            modalHtml += "<p>" + speaker.bio.replace(/\n([ \t]*\n)+/g, '</p><p>') + "</p>";
-            if (speaker.twitter_handle) {
-                modalHtml += "<a href=\"https://twitter.com/" + speaker.twitter_handle + "\">Follow on Twitter</a>";
+            modalHtml += "<p>" + speaker.bio.replace(/\n([ \t]*\n)+/g, "</p><p>") + "</p>";
+            if (speaker.twitterHandle) {
+                modalHtml += "<a href=\"https://twitter.com/" + speaker.twitterHandle + "\">Follow on Twitter</a>";
             }
             modalHtml += "</div>";
             modalHtml += "</div>";
