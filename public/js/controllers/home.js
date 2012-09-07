@@ -127,6 +127,9 @@ monkeyspace.home = {
             modalHtml += "</div>";
             var modal = $(modalHtml);
             modal.appendTo(body);
+
+            var plink = $('#session-' + session.id + ' div.content p:contains("http")');
+            plink.html('<a href="' + plink.text() + '">' + plink.text() + '<a>');
         }
     },
 
