@@ -43,7 +43,7 @@ monkeyspace.home = {
 
         for (var i = 0; i < schedule.days.length; i++) {
             var day = schedule.days[i];
-            var date = new Date(day.date);
+            var date = monkeyspace.utils.createEstDate(day.date);
             var dayDivWrapper = $("<div id=\"" + monkeyspace.utils.getWeekday(date.getDay()).toLowerCase() + "\"></div>");
             var dayTable = $("<table></table>");
 
@@ -53,8 +53,8 @@ monkeyspace.home = {
             var previousSessionTime = "";
             for (var j = 0; j < day.sessions.length; j++) {
                 var session = day.sessions[j];
-                var begins = new Date(session.begins);
-                var ends = new Date(session.ends);
+                var begins = monkeyspace.utils.createEstDate(session.begins);
+                var ends = monkeyspace.utils.createEstDate(session.ends);
 
                 var dataRow = $("<tr></tr>");
 

@@ -17,6 +17,14 @@ monkeyspace.utils = {
         return time;
     },
 
+    createEstDate: function(isoString) {
+        var offset = -4.0 // Daylight savings
+        var clientDate = new Date(isoString);
+        var utc = clientDate.getTime() + (clientDate.getTimezoneOffset() * 60000);
+        var estDate = new Date(utc + (3600000 * offset));
+        return estDate;
+    },
+
     getMonth: function(monthNumber) {
         var month = new Array(12);
         month[0] = "Jan";
