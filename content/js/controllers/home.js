@@ -35,7 +35,7 @@ monkeyspace.home = {
         var ul = $("<ul id=\"tab-nav\"></ul>");
         for (var i = 0; i < schedule.days.length; i++) {
             var day = schedule.days[i];
-            var date = new Date(day.date);
+            var date = monkeyspace.utils.createEstDate(day.date);
             var li = $("<li><a href=\"#" + monkeyspace.utils.getWeekday(date.getDay()).toLowerCase() + "\">" + monkeyspace.utils.getWeekday(date.getDay()) + ", " + monkeyspace.utils.getMonth(date.getMonth()) + " " + date.getDate() + "th</a></li>");
             li.appendTo(ul);
         }
