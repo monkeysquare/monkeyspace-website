@@ -236,7 +236,7 @@ ul#tab-nav li a:hover {
 }
 
 #footer ul {
-    float: left;
+    float: right;
     width: 400px;
     margin: 0 40px;
 }
@@ -252,6 +252,12 @@ ul#tab-nav li a:hover {
 
 #footer p a {
     color: #bc1718;
+}
+
+#footer p.center {
+    margin-top: 20px;
+    width: 960px;
+    text-align: center;
 }
     
 h1 {
@@ -342,4 +348,12 @@ ul#tab-nav li a.active:hover, .button:hover {
 #speakers_proposal p {
     line-height: 22px;
     margin: 0 0 0.5em;
+}
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0px;
+  clear: both;
+  visibility: hidden;
 }
