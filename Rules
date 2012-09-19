@@ -11,6 +11,10 @@
 //   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 //   because “*” matches zero or more characters.
 
+Compile("/campaign/*/", (context) => {
+  context.WithFilter("markdown").WithLayout("campaign");
+});
+
 Compile("/data/*/", (context) => {
   // don’t filter or layout
 });
