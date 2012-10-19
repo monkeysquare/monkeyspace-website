@@ -30,7 +30,7 @@ body {
     background: #000 url('../images/body.jpg') no-repeat center top; 
 }
 
-#speakers, #schedule, #speakers_proposal {
+#speakers, #schedule, #speakers_proposal, #open_space {
     background: #fff;
 }
 
@@ -44,7 +44,7 @@ body {
 }   
 
 /*MASTHEAD*/
-#masthead, #speakers, #schedule, #location, #sponsors, #speakers_proposal {
+#masthead, #speakers, #schedule, #location, #sponsors, #speakers_proposal, #open_space {
     float: left; width: 100%;
 }
 
@@ -223,6 +223,36 @@ ul#tab-nav li a:hover {
 
 #sponsors #brought li {
     margin: 0 10px 0 0;
+}
+
+#open_space table {
+    float: left; width: 100%; font-size: 14px; color: #363636;
+}
+
+#open_space td{
+    padding: 29px 0;
+    border-top: 1px solid #DDD;
+}
+
+#open_space td.no-border {
+    border: none;
+}
+
+#open_space th {
+    font-weight: bold; font-size: 16px; padding: 15px 0;
+}
+
+#open_space .col1 {
+    width: 120px;
+}
+
+#open_space .col2 {
+    width: 460px;
+    padding-right: 20px;
+}
+
+#open_space .col3 {
+    width: 200px;
 }
 
 #footer {
