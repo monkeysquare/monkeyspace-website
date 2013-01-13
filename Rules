@@ -11,6 +11,10 @@
 //   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 //   because “*” matches zero or more characters.
 
+Compile("/2011/*", (context) => {
+  // Don't filter or layout
+});
+
 Compile("/campaign/*/", (context) => {
   context.WithFilter("markdown").WithLayout("campaign");
 });
@@ -37,6 +41,10 @@ Compile("*", (context) => {
   } else {
     context.WithLayout("default");
   }
+});
+
+Route("/2011/stylesheets/*/", (context) => {
+  return context.Item.Identifier.Chop() + context.Item.Meta.Extension;
 });
 
 Route("/data/*/", (context) => {
