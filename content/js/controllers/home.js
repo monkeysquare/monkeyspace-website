@@ -69,7 +69,7 @@ monkeyspace.home = {
                 }
 
                 var titleColumn = $("<td class=\"col2\"><a href=\"#\" data-reveal-id=\"session-" + session.id + "\">"  + session.title + "</a></td>");
-                
+
                 var speakerNameColumn = $("<td class=\"col3\"></td>");
                 var speakers = "";
                 for (var k = 0; k < session.speakers.length; k++) {
@@ -79,7 +79,7 @@ monkeyspace.home = {
                     speakers += "<a href=\"#\" data-reveal-id=\"" + monkeyspace.utils.createRevealId(session.speakers[k].name) + "\">" + session.speakers[k].name + "</a>";
                     speakerNameColumn.html(speakers);
                 }
-                
+
                 var locationColumn = $("<td class=\"col4\">" + session.location + "</td>");
                 timeColumn.appendTo(dataRow);
                 titleColumn.appendTo(dataRow);
@@ -123,6 +123,11 @@ monkeyspace.home = {
             modalHtml += "<div class=\"content\">";
             modalHtml += "<h5>" + session.title + "</h5>";
             modalHtml += "<p>" + session.abstract.replace(/\n([ \t]*\n)+/g, "</p><p>") + "</p>";
+
+            if (session.vimeoId && session.vimeoId != "") {
+                modalHtml += "<iframe src=\"http://player.vimeo.com/video/" + session.vimeoId + "\" style=\"width: 500px;height: 281px\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>";
+            }
+
             modalHtml += "</div>";
             modalHtml += "</div>";
             var modal = $(modalHtml);

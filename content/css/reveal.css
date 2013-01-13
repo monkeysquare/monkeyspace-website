@@ -1,17 +1,17 @@
-.reveal-modal-bg { 
-    position: fixed; 
+.reveal-modal-bg {
+    position: fixed;
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,.5);
     z-index: 100;
     display: none;
     top: 0;
-    left: 0; 
+    left: 0;
 }
 
 .reveal-modal {
     visibility: hidden;
-    top: 100px; 
+    top: 100px;
     left: 50%;
     margin-left: -300px;
     width: 520px;
@@ -22,6 +22,7 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    display: none;
 }
 
 .reveal-modal.small { width: 200px; margin-left: -140px;}
@@ -39,8 +40,8 @@
     text-shadow: 0 -1px 1px rbga(0,0,0,.6);
     font-weight: bold;
     cursor: pointer;
-} 
-    
+}
+
 .reveal-modal h3 {
     font-size: 24px; margin-bottom: 20px;
 }
