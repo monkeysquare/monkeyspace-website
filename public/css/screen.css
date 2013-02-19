@@ -112,6 +112,14 @@ nav a {
     display: block;
 }
 
+#speakers p {
+    margin: 10px 0 20px 0;
+    float: left;
+}
+
+#speakers .call-link { display: inline; color: #bc1718; text-decoration: none;}
+#speakers .call-link:hover { color: #F27B7C; }
+
 .content {
     width: 430px; float: left; margin: 20px 0 0;
 }
@@ -130,6 +138,11 @@ nav a {
 
 #schedule {
     padding: 40px 0;
+}
+
+#schedule p {
+    margin: 10px 0;
+    float: left;
 }
 
 ul#tab-nav { margin: 20px 0; float: left; font-size: 18px; width: 100%;}

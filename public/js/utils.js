@@ -1,4 +1,20 @@
 monkeyspace.utils = {
+    parseUri: function(url) {
+        var result = {};
+        var anchor = document.createElement('a');
+        anchor.href = url;
+
+        var keys = 'protocol hostname host pathname port search hash href'.split(' ');
+        for (keyIndex in keys) {
+            var currentKey = keys[keyIndex];
+            result[currentKey] = anchor[currentKey];
+        }
+
+        result.toString = function() { return anchor.href; };
+        result.requestUri = result.pathname + result.search;
+        return result;
+    },
+
     pad: function(value) {
         if (value < 10) {
             value = "0" + value;
@@ -13,7 +29,7 @@ monkeyspace.utils = {
         var endHours = this.pad(endTime.getHours());
         var endMinutes = this.pad(endTime.getMinutes());
         var time = beginHours + ":" + beginMinutes + " - " + endHours + ":" + endMinutes;
-        
+
         return time;
     },
 
