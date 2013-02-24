@@ -4,6 +4,17 @@ monkeyspace.home = {
         this.getSessions();
         this.getSchedule();
         this.showMap();
+        this.showVideos();
+    },
+
+    showVideos: function() {
+        $('#intro-video-nav a').bind('click', function(e) {
+            e.preventDefault();
+            $('#intro-video-player div').hide(); // hide all Vimeo embeds
+            $('#intro-video-nav a').removeClass('selected'); // deselect all navigation thumbnails
+            $($(this).attr('href')).show(); // show the Vimeo embed for the clicked link
+            $(this).addClass('selected'); // select the clicked link
+        });
     },
 
     showMap: function() {
