@@ -210,7 +210,7 @@ monkeyspace.home = {
         else {
             $("#speakers-area").remove();
             var speakerSectionWrapper = $("#speakers").children(".wrapper");
-            var p = $("<p>Besides making MonkeySpace a diverse conference, we're also striving to make a diverse speaker panel, please bare with us while we get the new process in place. The call for speakers will open soon.</p>");
+            var p = $("<p>Call for proposals is now open, please view our <a href=\"/call\">CFP</a> on how to submit your proposal.</p>");
             p.appendTo(speakerSectionWrapper);
         }
     },
