@@ -19,8 +19,8 @@ line-height: 18px;
 margin: 0;}
 ol{list-style:lower-roman;}
 .replace {display: block; text-indent: -9999px;}
-a {color: #7d7d7d; text-decoration: none;}
-a:hover {color: #bc1718; }
+a {color: #e8280e; text-decoration: underline;}
+a:hover {text-decoration: none;}
 
 .wrapper {
     width: 960px; margin: 0 auto;
@@ -30,7 +30,7 @@ body {
     background: #000 url('../images/body.jpg') no-repeat center top;
 }
 
-#speakers, #schedule, #speakers_proposal, #open_space {
+#speakers, #schedule, #speakers_proposal, #open_space, #policies {
     background: #fff;
 }
 
@@ -44,9 +44,12 @@ body {
 }
 
 /*MASTHEAD*/
-#masthead, #speakers, #schedule, #location, #sponsors, #speakers_proposal, #open_space {
+#masthead, #speakers, #schedule, #location, #sponsors, #speakers_proposal, #open_space, #policies {
     float: left; width: 100%;
 }
+
+#masthead a, #footer a {color: #7d7d7d; text-decoration: none;}
+#masthead a:hover, #footer a:hover {color: #bc1718; }
 
 #branding {
     float: left; width: 100%;
@@ -130,7 +133,7 @@ nav a {
     display: block;
 }
 
-#speakers, #speakers_proposal {
+#speakers, #speakers_proposal, #policies {
     margin: 114px 0 0;
 }
 
@@ -315,7 +318,7 @@ ul#tab-nav li a:hover {
 
 #footer ul {
     float: right;
-    width: 400px;
+    width: 435px;
     margin: 0 40px;
 }
 
@@ -353,7 +356,7 @@ html {
 }
 
 h2 {
-    font-size: 47px; color: #fff; text-transform: uppercase; margin-bottom: 20px;
+    font-size: 45px; color: #fff; text-transform: uppercase; margin-bottom: 20px;
 }
 
 h3 {
@@ -426,6 +429,29 @@ ul#tab-nav li a.active:hover, .button:hover {
 #speakers_proposal p {
     line-height: 22px;
     margin: 0 0 0.5em;
+}
+
+#speakers_proposal p strong {
+    font-weight: bold;
+}
+
+#policies {
+    padding-bottom: 30px;
+}
+#policies h3 {
+    margin: 40px 0 18px;
+}
+#policies li {
+    margin: 0 0px 10px 20px;
+    list-style-type: disc;
+}
+#policies p {
+    line-height: 22px;
+    margin: 0 0 0.5em;
+}
+
+#policies p strong {
+    font-weight: bold;
 }
 
 .group:after {
