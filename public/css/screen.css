@@ -158,6 +158,9 @@ nav a {
 #speakers .call-link { display: inline; color: #bc1718; text-decoration: none;}
 #speakers .call-link:hover { color: #F27B7C; }
 
+.hotel-link { display: inline; color: #000; text-decoration: underline; font-weight: normal; cursor: pointer;}
+.hotel-link:hover { color: #fff; cursor: pointer; text-decoration: none; }
+
 .content {
     width: 430px; float: left; margin: 20px 0 0;
 }

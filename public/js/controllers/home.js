@@ -22,6 +22,7 @@ monkeyspace.home = {
         //var venueLatLng = new google.maps.LatLng(42.361291, -71.08119);
         //var hotelLatLng = new google.maps.LatLng(42.363007, -71.086060);
         var venueLatLng = new google.maps.LatLng(41.874208,-87.62448);
+        var hotelLatLng = new google.maps.LatLng(41.873364,-87.624378);
 
         var options = {
             center: venueLatLng,
@@ -47,6 +48,12 @@ monkeyspace.home = {
         //    map: map,
         //    title: "Boston Marriott Cambridge"
         //});
+
+        var hotel = new google.maps.Marker({
+            position: hotelLatLng,
+            map: map,
+            title: "Renaissance Blackstone Chicago Hotel"
+        });
     },
 
     displaySchedule: function(schedule) {
