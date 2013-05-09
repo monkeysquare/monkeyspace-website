@@ -217,7 +217,8 @@ monkeyspace.home = {
         else {
             $("#speakers-area").remove();
             var speakerSectionWrapper = $("#speakers").children(".wrapper");
-            var p = $("<p>Call for proposals is now open, please view our <a href=\"/call\">CFP</a> on how to submit your proposal.</p>");
+            //var p = $("<p>Call for proposals is now open, please view our <a href=\"/call\">CFP</a> on how to submit your proposal.</p>");
+            var p = $("<p>Call for proposals is now closed.</p>");
             p.appendTo(speakerSectionWrapper);
         }
     },
