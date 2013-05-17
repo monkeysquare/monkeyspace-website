@@ -197,7 +197,7 @@ nav a {
 }
 
 #schedule table {
-    float: left; width: 100%; font-size: 14px; color: #363636;
+    float: left; width: 100%; font-size: 14px; color: #363636; text-align: left;
 }
 
 #schedule td{
