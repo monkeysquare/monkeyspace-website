@@ -64,7 +64,7 @@ monkeyspace.home = {
             for (var i = 0; i < schedule.days.length; i++) {
                 var day = schedule.days[i];
                 var date = monkeyspace.utils.createEstDate(day.date);
-                var li = $("<li><a href=\"#" + monkeyspace.utils.getWeekday(date.getDay()).toLowerCase() + "\">" + monkeyspace.utils.getWeekday(date.getDay()) + ", " + monkeyspace.utils.getMonth(date.getMonth()) + " " + date.getDate() + "th</a></li>");
+                var li = $("<li><a href=\"#" + monkeyspace.utils.getWeekday(date.getDay()).toLowerCase() + "\">Day " + (i + 1) + "</a></li>");
                 li.appendTo(ul);
             }
             ul.appendTo(scheduleArea);

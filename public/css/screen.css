@@ -186,14 +186,13 @@ nav a {
     float: left;
 }
 
-ul#tab-nav { margin: 20px 0; float: left; font-size: 18px; width: 100%;}
-ul#tab-nav li {float: left; margin: 0 160px 0 0;}
-ul#tab-nav li:last-of-type {
-    margin: 0;
-}
-ul#tab-nav li a {display: block; padding: 14px;}
-ul#tab-nav li.active a {color: #fff; padding: 14px; display: block; border: 1px solid #710f10;}
-ul#tab-nav li a:hover {
+#tabs { text-align: center; }
+#tabs ul { margin: 35px 0; font-size: 18px; list-style: none; }
+#tabs ul li { display: inline; margin: 0 160px 0 0; }
+#tabs ul li:last-of-type { margin: 0; }
+#tabs ul li a { padding: 14px; }
+#tabs ul li.active a { color: #fff; padding: 14px; border: 1px solid #710f10; }
+#tabs ul li a:hover {
     text-decoration: none;
 }
 
@@ -360,7 +359,7 @@ h2 {
 }
 
 h3 {
-    float: left; width: 100%; font-size: 26px; border-bottom: 1px solid #d7d7d7; font-weight: normal; margin: 40px 0 0; padding-bottom: 20px; color: #555555;
+    width: 100%; font-size: 26px; border-bottom: 1px solid #d7d7d7; font-weight: normal; margin: 40px 0 0; padding-bottom: 20px; color: #555555;
 }
 
 #location h3, #sponsors h3 {
