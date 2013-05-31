@@ -104,7 +104,7 @@ monkeyspace.home = {
                         if (k != 0) {
                             speakers += "<br/>";
                         }
-                        speakers += "<a href=\"#\" data-reveal-id=\"" + monkeyspace.utils.createRevealId(session.speakers[k].name) + "\">" + session.speakers[k].name + "</a>";
+                        speakers += "<a href=\"#\" data-reveal-id=\"" + monkeyspace.utils.createRevealId(session.speakers[k].name.replace("'", "")) + "\">" + session.speakers[k].name + "</a>";
                         speakerNameColumn.html(speakers);
                     }
 
@@ -194,13 +194,13 @@ monkeyspace.home = {
             var body = $("body");
             for (var i = 0; i < speakers.length; i++) {
                 var speaker = speakers[i];
-                var li = $("<li><a href=\"#\" data-reveal-id=\"" + monkeyspace.utils.createRevealId(speaker.name) + "\"><img src=\"" + speaker.headshotUrl + "\" title=\"" + speaker.name + "\" alt=\"" + speaker.name + "\" width=\"159\" height=\"159\" /></a></li>");
+                var li = $("<li><a href=\"#\" data-reveal-id=\"" + monkeyspace.utils.createRevealId(speaker.name.replace("'", "")) + "\"><img src=\"" + speaker.headshotUrl + "\" title=\"" + speaker.name + "\" alt=\"" + speaker.name + "\" width=\"159\" height=\"159\" /></a></li>");
                 if (((i + 1) % 5) == 0 || (i == speakers.length)) {
                     li.addClass("last");
                 }
                 li.appendTo(speakersArea);
 
-                var modalHtml = "<div id=\"" + monkeyspace.utils.createRevealId(speaker.name) + "\" class=\"reveal-modal\">";
+                var modalHtml = "<div id=\"" + monkeyspace.utils.createRevealId(speaker.name.replace("'", "")) + "\" class=\"reveal-modal\">";
                 modalHtml += "<img src=\"" + speaker.headshotUrl + "\" width=\"120\" height=\"120\" />";
                 modalHtml += "<div class=\"content\">";
                 modalHtml += "<h5>" + speaker.name + "</h5>";
