@@ -35,8 +35,8 @@ monkeyspace.utils = {
 
     createEstDate: function(isoString) {
         var offset = -4.0 // Daylight savings
-        var clientDate = new Date(isoString);
-        var utc = clientDate.getTime() + (clientDate.getTimezoneOffset() * 60000);
+        var clientDate = moment(isoString);
+        var utc = clientDate.valueOf() + (clientDate.zone() * 60000);
         var estDate = new Date(utc + (3600000 * offset));
         return estDate;
     },
