@@ -21,7 +21,7 @@ monkeyspace.home = {
         var $map = $("#map");
         //var venueLatLng = new google.maps.LatLng(42.361291, -71.08119);
         //var hotelLatLng = new google.maps.LatLng(42.363007, -71.086060);
-        var venueLatLng = new google.maps.LatLng(41.874208,-87.62448);
+        var venueLatLng = new google.maps.LatLng(41.859923,-87.627322);
         var hotelLatLng = new google.maps.LatLng(41.873364,-87.624378);
 
         var options = {
