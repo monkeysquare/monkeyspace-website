@@ -30,7 +30,7 @@ body {
     background: #000 url('../images/body.jpg') no-repeat center top;
 }
 
-#speakers, #schedule, #speakers_proposal, #open_space, #policies {
+#speakers, #schedule, #speakers_proposal, #open_space, #policies, #stream {
     background: #fff;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 /*MASTHEAD*/
-#masthead, #speakers, #schedule, #location, #sponsors, #speakers_proposal, #open_space, #policies {
+#masthead, #speakers, #schedule, #location, #sponsors, #speakers_proposal, #open_space, #policies, #stream {
     float: left; width: 100%;
 }
 
@@ -133,7 +133,7 @@ nav a {
     display: block;
 }
 
-#speakers, #speakers_proposal, #policies {
+#speakers, #speakers_proposal, #policies, #stream {
     margin: 114px 0 0;
 }
 
@@ -450,6 +450,25 @@ ul#tab-nav li a.active:hover, .button:hover {
 }
 
 #policies p strong {
+    font-weight: bold;
+}
+
+#stream {
+    padding-bottom: 30px;
+}
+#stream h3 {
+    margin: 40px 0 18px;
+}
+#stream li {
+    margin: 0 0px 10px 20px;
+    list-style-type: disc;
+}
+#stream p {
+    line-height: 22px;
+    margin: 0 0 0.5em;
+}
+
+#stream p strong {
     font-weight: bold;
 }
 
