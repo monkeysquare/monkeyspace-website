@@ -21,8 +21,9 @@ monkeyspace.home = {
         var $map = $("#map");
         //var venueLatLng = new google.maps.LatLng(42.361291, -71.08119);
         //var hotelLatLng = new google.maps.LatLng(42.363007, -71.086060);
-        var venueLatLng = new google.maps.LatLng(41.859923,-87.627322);
-        var hotelLatLng = new google.maps.LatLng(41.873364,-87.624378);
+        //var venueLatLng = new google.maps.LatLng(41.859923,-87.627322);
+        //var hotelLatLng = new google.maps.LatLng(41.873364,-87.624378);
+        var venueLatLng = new google.maps.LatLng(53.3321, -6.234201);
 
         var options = {
             center: venueLatLng,
@@ -37,10 +38,16 @@ monkeyspace.home = {
         //    title: "Microsoft NERD Center"
         //});
 
+        //var venue = new google.maps.Marker({
+        //    position: venueLatLng,
+        //    map: map,
+        //    title: "Columbia College"
+        //});
+
         var venue = new google.maps.Marker({
             position: venueLatLng,
             map: map,
-            title: "Columbia College"
+            title: "Ballsbridge Hotel"
         });
 
         //var hotel = new google.maps.Marker({
@@ -49,11 +56,11 @@ monkeyspace.home = {
         //    title: "Boston Marriott Cambridge"
         //});
 
-        var hotel = new google.maps.Marker({
-            position: hotelLatLng,
-            map: map,
-            title: "Renaissance Blackstone Chicago Hotel"
-        });
+        //var hotel = new google.maps.Marker({
+        //    position: hotelLatLng,
+        //    map: map,
+        //    title: "Renaissance Blackstone Chicago Hotel"
+        //});
     },
 
     displaySchedule: function(schedule) {
