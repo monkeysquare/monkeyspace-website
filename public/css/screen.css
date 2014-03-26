@@ -76,13 +76,13 @@ nav a {
     width: 450px; float: left; margin: 87px 0 0 0;
 }
 
-#intro .guestlist-event-150132 {
+#intro .guestlist-event-243408 {
     background: url('../images/register_button.png') no-repeat left top;
     width: 307px; height: 84px; display: block; text-indent: -9999px;margin: 10px 0 0;
     cursor: default;
 }
 
-#intro .guestlist-event-150132:hover {
+#intro .guestlist-event-243408:hover {
     background: url('../images/register_button-hover.png') no-repeat left top;
     cursor: pointer;
 }
